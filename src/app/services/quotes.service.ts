@@ -10,5 +10,6 @@ export class QuotesService {
 
   getQuotes(): Observable<any> {
     return this.http.get("http://quotes.stormconsultancy.co.uk/random.json");
+    
   }
 }

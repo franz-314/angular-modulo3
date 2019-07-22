@@ -8,7 +8,7 @@ import { QuotesService } from '../services/quotes.service';
 })
 export class MyComponentComponent implements OnInit {
 
-  public information: object;
+  public information: Object;
 
   constructor(private quotesService: QuotesService) { }
 

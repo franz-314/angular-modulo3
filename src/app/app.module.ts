@@ -6,11 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyComponentComponent } from './my-component/my-component.component';
 
+import { QuotesService } from './services/quotes.service';
+
 @NgModule({
   declarations: [
     AppComponent,
-    MyComponentComponent,
-    HttpClientModule
+    MyComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -18,9 +19,11 @@ import { MyComponentComponent } from './my-component/my-component.component';
     HttpClientModule
   ],
   exports: [
-    HttpClientModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    QuotesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
