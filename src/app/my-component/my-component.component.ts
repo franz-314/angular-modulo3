@@ -8,7 +8,7 @@ import { QuotesService } from '../services/quotes.service';
 })
 export class MyComponentComponent implements OnInit {
 
-  public information: Object;
+  private information: object ;
 
   constructor(private quotesService: QuotesService) { }
 
@@ -18,8 +18,8 @@ export class MyComponentComponent implements OnInit {
 
   getQuotes(){
     return this.quotesService.getQuotes()
-    .subscribe(data=>{
-      this.information = data;
+    .subscribe( data =>{
+      this.information = data ;
       return data;
     });
   }
